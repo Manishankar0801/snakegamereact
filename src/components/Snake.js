@@ -1,13 +1,7 @@
-import React from "react";
-import "./style.css";
-
-const Snake = ({ pixel }) => {
-  return (
-    <div
-      className="snake"
-      style={{ gridColumn: pixel.y, gridRow: pixel.x }}
-    ></div>
-  );
-};
-
-export default Snake;
+export default function Snake({ pixel }) {
+    const snakeStyle = {
+      gridRow: pixel.x,
+      gridColumn: pixel.y,
+    };
+    return <div className="snake" style={snakeStyle}></div>;
+  }

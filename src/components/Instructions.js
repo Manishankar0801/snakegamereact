@@ -1,28 +1,26 @@
-import React from "react";
 import "./style.css";
-
-const Instructions = () => {
+export default function Instructions() {
   return (
     <div
       style={{
         display: "flex",
-        flexDirection: "column",
         width: "400px",
         height: "400px",
-        alignItems: "center",
         justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
       }}
     >
       <img
         src={require("../snake-game-ai-gen.png")}
+        // src="../snake-game-ai-gen.png"
         alt="snake-logo"
         id="logo"
       />
-      <h4 id="instruction__text">
-        Press spacebar to start the game <br /> Developed By: Mani Shankar Janumpalli
-      </h4>
+      <h2 id="instruction-text">
+        press Spacebar to Start The Game <br />
+        Developed By: Mani Shankar Janumpalli
+      </h2>
     </div>
   );
-};
-
-export default Instructions;
+}

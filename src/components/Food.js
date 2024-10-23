@@ -1,9 +1,7 @@
-import React from "react";
-
-const Food = ({ pixel }) => {
-  return (
-    <div className="food" style={{ gridColumn: pixel.y, gridRow: pixel.x }}></div>
-  );
-};
-
-export default Food;
+export default function Food({ pixel }) {
+    const foodStyle = {
+      gridRow: pixel.x,
+      gridColumn: pixel.y,
+    };
+    return <div className="food" style={foodStyle}></div>;
+  }
